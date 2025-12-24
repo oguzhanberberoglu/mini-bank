@@ -9,7 +9,7 @@ function PublicLayout() {
             <p className="brand-kicker">Mini Bank Application</p>
             <h1> Oguzhan Berberoglu</h1>
             <p className="muted">created by</p>
-            <p className="muted">Oreodata Job Application 2025 December</p>
+            <p className="muted">Oredata Job Application 2025 December</p>
           </div>
         </div>
         <div className="public-panel">
