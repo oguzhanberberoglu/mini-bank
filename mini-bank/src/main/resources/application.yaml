@@ -1,0 +1,23 @@
+spring:
+  application:
+    name: mini-bank
+  datasource:
+    url: ${SPRING_DATASOURCE_URL:jdbc:postgresql://localhost:5432/mini_bank}
+    username: ${SPRING_DATASOURCE_USERNAME:mini_bank}
+    password: ${SPRING_DATASOURCE_PASSWORD:mini_bank}
+  jpa:
+    hibernate:
+      ddl-auto: update
+    open-in-view: false
+    properties:
+      hibernate:
+        format_sql: true
+springdoc:
+  swagger-ui:
+    path: /swagger-ui.html
+
+app:
+  security:
+    jwt:
+      secret: ${JWT_SECRET:v3u9Qe4mH7pL1rK8tZ5xB2nC6sY9wD3fG7hJ1kQ4uP8aS2dV6}
+      access-token-validity-minutes: ${JWT_ACCESS_TOKEN_MINUTES:60}

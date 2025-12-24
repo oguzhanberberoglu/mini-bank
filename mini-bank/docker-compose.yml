@@ -1,0 +1,17 @@
+version: "3.9"
+
+services:
+  postgres:
+    image: postgres:16
+    container_name: mini-bank-postgres
+    environment:
+      POSTGRES_DB: mini_bank
+      POSTGRES_USER: mini_bank
+      POSTGRES_PASSWORD: mini_bank
+    ports:
+      - "5432:5432"
+    volumes:
+      - mini_bank_pgdata:/var/lib/postgresql/data
+
+volumes:
+  mini_bank_pgdata:
